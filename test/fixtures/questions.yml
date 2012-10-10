@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Question: MyText
+  Question_Type: 1
+  Hint: MyText
+  Hint_Point: 1
+  Answer: MyText
+
+two:
+  Question: MyText
+  Question_Type: 1
+  Hint: MyText
+  Hint_Point: 1
+  Answer: MyText

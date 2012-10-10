@@ -1,4 +1,14 @@
 CourseAssignment::Application.routes.draw do
+  resources :questions
+
+  resources :assignments
+
+  resources :instructors
+
+  resources :courses
+
+  resources :students
+
   root :to => 'home#index'
 
   get "home/index"

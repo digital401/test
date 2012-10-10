@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Assignment_Name: MyString
+  Start_Date: 2012-10-10 08:01:05
+  Due_Date: 2012-10-10 08:01:05
+  Point: 1
+  Description: MyText
+
+two:
+  Assignment_Name: MyString
+  Start_Date: 2012-10-10 08:01:05
+  Due_Date: 2012-10-10 08:01:05
+  Point: 1
+  Description: MyText

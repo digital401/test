@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Course_Year: 1
+  Semester: MyString
+  Course_Name: MyString
+  Section: MyString
+  Course_Time: MyString
+  Class_Room: MyString
+  Credit: 1
+  Course_Description: MyText
+
+two:
+  Course_Year: 1
+  Semester: MyString
+  Course_Name: MyString
+  Section: MyString
+  Course_Time: MyString
+  Class_Room: MyString
+  Credit: 1
+  Course_Description: MyText
