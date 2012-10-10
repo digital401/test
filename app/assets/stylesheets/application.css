@@ -111,4 +111,16 @@ padding: 0.5em;
 text-align: left;
 vertical-align: top;
 }
+.data-form dl {
+clear: both;
+display: block;
+padding: 0.3em;
+vertical-align: text-top;
+}
+.data-form dt {
+float: left;
+text-align: right;
+font-weight: bold;
+}
+
 

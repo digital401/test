@@ -1,7 +1,18 @@
-<h1>Assignment</h1>
-<p>Chenglin's test</p>
-<p><%= link_to 'student', students_path %></p>
-<p><%= link_to 'instructor', instructors_path %></p>
-<p><%= link_to 'course', courses_path %></p>
-<p><%= link_to 'question', questions_path %></p>
+<h1>Course Assignment</h1>
+<form class="data-form">
+<dl>
+  <dt>Email:</dt>
+  <dd><input type="text" name="email" value=""></dd>
+</dl>
+<dl>
+  <dt>Password:</dt>
+  <dd><input type="password" name="password" value=""></dd>
+</dl>
+<dl>
+  <dd><input type="checkbox" name="instructor" value="Y"> login as instructor?</dd>
+</dl>
+<dl>
+  <dd><input type="button" value="login"></dd>
+</dl>
+</form>
 
