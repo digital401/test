@@ -30,19 +30,23 @@ font: normal normal 100% helvetica, arial, sans-serif;
 background: #fcfcfc;
 }
 h1 {
-font: normal bold 160% 'arial narrow', helvetica, sans-serif;
+padding: 0.5em 0;
+font: normal bold 160% helvetica, arial, sans-serif;
 color: #6699cc;
 }
 h2 {
-font: normal bold 140% 'arial narrow', helvetica, sans-serif;
+padding: 0.5em 0;
+font: normal bold 140% helvetica, arial, sans-serif;
 color: #6699cc;
 }
 h3 {
-font: normal bold 120% 'arial narrow', helvetica, sans-serif;
+padding: 0.5em 0;
+font: normal bold 120% helvetica, arial, sans-serif;
 color: #6699cc;
 }
 h4 {
-font: normal bold 100% 'arial narrow', helvetica, sans-serif;
+padding: 0.5em 0;
+font: normal bold 100% helvetica, arial, sans-serif;
 color: #6699cc;
 }
 /* global link attributes */
