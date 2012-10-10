@@ -1,0 +1,42 @@
+<h1>Show Student</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @instructor.First_Name %>
+</p>
+
+<p>
+  <b>Middle name:</b>
+  <%= @instructor.Middle_Name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @instructor.Last_Name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @instructor.Email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @instructor.Phone %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @instructor.Address %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @instructor.Password %>
+</p>
+
+
+<%= link_to 'Edit', edit_instructor_path(@instructor) %> |
+<%= link_to 'Back', instructors_path %>
