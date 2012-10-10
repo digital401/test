@@ -34,6 +34,9 @@ margin: 0 auto;
 padding: 0;
 max-width: 960px;
 background: #fcfcfc;
+border-right: 1px solid #999;
+border-bottom: 1px solid #999;
+border-left: 1px solid #999;
 }
 /* global link attributes */
 a img {
@@ -108,5 +111,18 @@ margin: 0;
 padding: 0.5em;
 text-align: left;
 vertical-align: top;
+}
+/* -----   FOOTER   ----- */
+#footer-wrapper {
+clear: both;
+width: 100%;
+text-align: center;
+background: #3972AD;
+}
+#footer {
+margin: 0 auto;
+padding: 1em;
+font: normal normal 80% helvetica, arial, sans-serif;
+color: #ffffff;
 }
 
