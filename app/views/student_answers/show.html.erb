@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Question id:</b>
+  <%= @student_answer.Question_ID %>
+</p>
+
+<p>
+  <b>Student answer:</b>
+  <%= @student_answer.Student_Answer %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @student_answer.Score %>
+</p>
+
+<p>
+  <b>Student id:</b>
+  <%= @student_answer.Student_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_answer_path(@student_answer) %> |
+<%= link_to 'Back', student_answers_path %>

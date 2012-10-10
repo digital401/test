@@ -1,0 +1,35 @@
+<h1>Listing student_submissions</h1>
+
+<table>
+  <tr>
+    <th>Student id</th>
+    <th>Assignment id</th>
+    <th>Score</th>
+    <th>Request extension</th>
+    <th>Reason for extension</th>
+    <th>Extend due date</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @student_submissions.each do |student_submission| %>
+  <tr>
+    <td><%= student_submission.Student_ID %></td>
+    <td><%= student_submission.Assignment_ID %></td>
+    <td><%= student_submission.Score %></td>
+    <td><%= student_submission.Request_Extension %></td>
+    <td><%= student_submission.Reason_For_Extension %></td>
+    <td><%= student_submission.Extend_Due_Date %></td>
+    <td><%= student_submission.Notes %></td>
+    <td><%= link_to 'Show', student_submission %></td>
+    <td><%= link_to 'Edit', edit_student_submission_path(student_submission) %></td>
+    <td><%= link_to 'Destroy', student_submission, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student submission', new_student_submission_path %>

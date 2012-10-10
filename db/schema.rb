@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121010150113) do
+ActiveRecord::Schema.define(:version => 20121010191607) do
+
+  create_table "assignment_questions", :force => true do |t|
+    t.integer  "Assignment_ID"
+    t.integer  "Question_ID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "assignments", :force => true do |t|
     t.string   "Assignment_Name"
@@ -21,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20121010150113) do
     t.text     "Description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "course_id"
   end
 
   create_table "courses", :force => true do |t|
@@ -32,6 +40,13 @@ ActiveRecord::Schema.define(:version => 20121010150113) do
     t.string   "Class_Room"
     t.integer  "Credit"
     t.text     "Course_Description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "enrollments", :force => true do |t|
+    t.integer  "Student_ID"
+    t.integer  "Course_ID"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,6 +81,13 @@ ActiveRecord::Schema.define(:version => 20121010150113) do
     t.string   "Email"
     t.integer  "Admission_Year"
     t.text     "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teachings", :force => true do |t|
+    t.integer  "Instructor_ID"
+    t.integer  "Course_ID"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

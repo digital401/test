@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student id:</b>
+  <%= @student_submission.Student_ID %>
+</p>
+
+<p>
+  <b>Assignment id:</b>
+  <%= @student_submission.Assignment_ID %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @student_submission.Score %>
+</p>
+
+<p>
+  <b>Request extension:</b>
+  <%= @student_submission.Request_Extension %>
+</p>
+
+<p>
+  <b>Reason for extension:</b>
+  <%= @student_submission.Reason_For_Extension %>
+</p>
+
+<p>
+  <b>Extend due date:</b>
+  <%= @student_submission.Extend_Due_Date %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @student_submission.Notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_submission_path(@student_submission) %> |
+<%= link_to 'Back', student_submissions_path %>

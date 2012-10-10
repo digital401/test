@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Student_ID: 1
+  Assignment_ID: 1
+  Score: 1
+  Request_Extension: 2012-10-10 12:35:24
+  Reason_For_Extension: MyText
+  Extend_Due_Date: 2012-10-10 12:35:24
+  Notes: 
+
+two:
+  Student_ID: 1
+  Assignment_ID: 1
+  Score: 1
+  Request_Extension: 2012-10-10 12:35:24
+  Reason_For_Extension: MyText
+  Extend_Due_Date: 2012-10-10 12:35:24
+  Notes: 

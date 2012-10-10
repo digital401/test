@@ -1,0 +1,45 @@
+<%= form_for(@student_submission) do |f| %>
+  <% if @student_submission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student_submission.errors.count, "error") %> prohibited this student_submission from being saved:</h2>
+
+      <ul>
+      <% @student_submission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Student_ID %><br />
+    <%= f.number_field :Student_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Assignment_ID %><br />
+    <%= f.number_field :Assignment_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Score %><br />
+    <%= f.number_field :Score %>
+  </div>
+  <div class="field">
+    <%= f.label :Request_Extension %><br />
+    <%= f.datetime_select :Request_Extension %>
+  </div>
+  <div class="field">
+    <%= f.label :Reason_For_Extension %><br />
+    <%= f.text_area :Reason_For_Extension %>
+  </div>
+  <div class="field">
+    <%= f.label :Extend_Due_Date %><br />
+    <%= f.datetime_select :Extend_Due_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Notes %><br />
+    <%= f.text_field :Notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

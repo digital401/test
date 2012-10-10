@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Question_ID: 1
+  Student_Answer: MyText
+  Score: 1
+  Student_ID: 1
+
+two:
+  Question_ID: 1
+  Student_Answer: MyText
+  Score: 1
+  Student_ID: 1
