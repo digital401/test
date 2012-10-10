@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121010191607) do
+ActiveRecord::Schema.define(:version => 20121010193534) do
 
   create_table "assignment_questions", :force => true do |t|
     t.integer  "Assignment_ID"
@@ -69,6 +69,27 @@ ActiveRecord::Schema.define(:version => 20121010191607) do
     t.text     "Hint"
     t.integer  "Hint_Point"
     t.text     "Answer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "student_answers", :force => true do |t|
+    t.integer  "Question_ID"
+    t.text     "Student_Answer"
+    t.integer  "Score"
+    t.integer  "Student_ID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "student_submissions", :force => true do |t|
+    t.integer  "Student_ID"
+    t.integer  "Assignment_ID"
+    t.integer  "Score"
+    t.datetime "Request_Extension"
+    t.text     "Reason_For_Extension"
+    t.datetime "Extend_Due_Date"
+    t.text     "Notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

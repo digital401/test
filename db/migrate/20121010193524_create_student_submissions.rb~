@@ -7,7 +7,7 @@ class CreateStudentSubmissions < ActiveRecord::Migration
       t.datetime :Request_Extension
       t.text :Reason_For_Extension
       t.datetime :Extend_Due_Date
-      t.text :Notes
+      t.Text :Notes
 
       t.timestamps
     end
