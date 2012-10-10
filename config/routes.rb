@@ -1,4 +1,10 @@
 CourseAssignment::Application.routes.draw do
+  resources :assignment_questions
+
+  resources :teachings
+
+  resources :enrollments
+
   resources :questions
 
   resources :assignments

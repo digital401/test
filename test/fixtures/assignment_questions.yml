@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Assignment_ID: 1
+  Question_ID: 1
+
+two:
+  Assignment_ID: 1
+  Question_ID: 1
