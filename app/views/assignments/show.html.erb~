@@ -1,5 +1,3 @@
-<h1>Show Assignment</h1>
-
 <p id="notice"><%= notice %></p>
 
 <p>

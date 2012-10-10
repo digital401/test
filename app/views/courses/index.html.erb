@@ -1,10 +1,5 @@
-<%= stylesheet_link_tag "style" %>
-<div id="outer-wrapper">
-  <div id="header-wrapper">
-    <h1>Listing courses</h1>
-  </div>
-<div id="content-wrapper">
-  <div id="main-wrapper">
+<h1>Listing courses</h1>
+
 <table class="data-table">
   <tr>
     <th>Course year</th>
@@ -14,7 +9,7 @@
     <th>Course time</th>
     <th>Class room</th>
     <th>Credit</th>
-    <th>Course description</th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -29,7 +24,7 @@
     <td><%= course.Course_Time %></td>
     <td><%= course.Class_Room %></td>
     <td><%= course.Credit %></td>
-    <td><%= course.Course_Description %></td>
+    <td><%= link_to 'Assignment', assignments_path %></td>
     <td><%= link_to 'Show', course %></td>
     <td><%= link_to 'Edit', edit_course_path(course) %></td>
     <td><%= link_to 'Destroy', course, confirm: 'Are you sure?', method: :delete %></td>
@@ -40,5 +35,4 @@
 <br />
 
 <%= link_to 'New Course', new_course_path %>
-  </div>
-</div>
+

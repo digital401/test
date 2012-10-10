@@ -1,0 +1,12 @@
+  <div id="header-wrapper">
+    <h1>Editing course</h1>
+  </div>
+<div id="content-wrapper">
+  <div id="main-wrapper">
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @course %> |
+<%= link_to 'Back', courses_path %>
+  </div>
+</div>

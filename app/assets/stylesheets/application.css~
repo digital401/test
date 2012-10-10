@@ -1,3 +1,10 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
 // Place all the styles related to the courses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -18,27 +25,30 @@ height: 100%;
 }
 body {
 margin: 0 0.5em;
-padding: 0;
 min-width: 640px;
-background: #000;
 font: normal normal 100% helvetica, arial, sans-serif;
-}
-.clear {
-clear: both;
-line-height: 0;
-height: 0;
-}
-/* outer wrapper */
-#outer-wrapper {
-margin: 0 auto;
-padding: 0;
-max-width: 960px;
 background: #fcfcfc;
 }
+h1 {
+padding: 0.5em 0;
+font: normal bold 160% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+h2 {
+padding: 0.5em 0;
+font: normal bold 140% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+h3 {
+font: normal bold 120% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+h4 {
+font: normal bold 100% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
 /* global link attributes */
-a img {
-margin: 0px;
-padding: 0px;
+a > img {
 border: 0;
 }
 a, a:visited {
@@ -50,37 +60,13 @@ text-decoration: none;
 color: #66CCFF;
 cursor: pointer;
 }
-/* -----   HEADER   ----- */
-#header-wrapper {
-margin: 0;
-padding: 0 1em;
-}
-#header-wrapper h1 {
-margin: 0px;
-padding: 1em 0 0.5em;
-font: normal normal 140% 'arial narrow', helvetica, sans-serif;
-font-weight: bold;
-}
-#header-wrapper h4 {
-margin: 0px;
-padding: 0 0 0.5em;
-font: normal normal 100% 'arial narrow', helvetica, sans-serif;
-color: #0033CC;
-font-weight: bold;
-}
 /* -----   MAIN   ----- */
 #content-wrapper {
-margin: 0;
-padding: 0 0.5em 2em 1em;
-}
-#main-wrapper {
 margin: 0 auto;
-padding: 0.5em 0 0;
+max-width: 960px;
 color: #000;
-font: normal normal 90% helvetica, arial, sans-serif;
 }
 #main-wrapper p {
-margin: 0px;
 padding: 5px 0px;
 font: normal normal 100% helvetica, arial, sans-serif;
 line-height:1.2em;
@@ -96,7 +82,6 @@ font: normal normal 90% helvetica, arial, sans-serif;
 background: #fcfcfc;
 }
 .data-table th {
-margin: 0;
 padding: 8px 10px;
 vertical-align: baseline;
 text-align: left;
@@ -104,7 +89,6 @@ color: #fff;
 background: #6699cc;
 }
 .data-table td {
-margin: 0;
 padding: 0.5em;
 text-align: left;
 vertical-align: top;

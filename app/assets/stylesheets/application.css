@@ -5,3 +5,90 @@
  *= require_self
  *= require_tree . 
 */
+// Place all the styles related to the courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body, div, p, span, iframe, pre, a, abbr, acronym, address, cite, code, del, dfn, em, input, ins, kbd, h1, h2, h3, h4, img, sub, sup, tt, var, dl, dt, dd,  ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+font-size: 100%;
+border: 0 none;
+outline: 0 none;
+vertical-align: baseline;
+background: transparent;
+}
+/* -----   GLOBAL   ----- */
+html, body {
+width: 99%;
+height: 100%;
+}
+body {
+margin: 0 0.5em;
+min-width: 640px;
+font: normal normal 100% helvetica, arial, sans-serif;
+background: #fcfcfc;
+}
+h1 {
+font: normal bold 160% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+h2 {
+font: normal bold 140% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+h3 {
+font: normal bold 120% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+h4 {
+font: normal bold 100% 'arial narrow', helvetica, sans-serif;
+color: #6699cc;
+}
+/* global link attributes */
+a > img {
+border: 0;
+}
+a, a:visited {
+color: #003366;
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+color: #66CCFF;
+cursor: pointer;
+}
+/* -----   MAIN   ----- */
+#content-wrapper {
+margin: 0 auto;
+max-width: 960px;
+color: #000;
+}
+#main-wrapper p {
+padding: 5px 0px;
+font: normal normal 100% helvetica, arial, sans-serif;
+line-height:1.2em;
+text-align: left;
+}
+.data-table {
+width: 100%;
+position: relative;
+border-collapse: collapse;
+border-spacing: 0px;
+border: 1px solid #6699cc;
+font: normal normal 90% helvetica, arial, sans-serif;
+background: #fcfcfc;
+}
+.data-table th {
+padding: 8px 10px;
+vertical-align: baseline;
+text-align: left;
+color: #fff;
+background: #6699cc;
+}
+.data-table td {
+padding: 0.5em;
+text-align: left;
+vertical-align: top;
+}
+

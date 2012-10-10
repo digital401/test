@@ -1,4 +1,9 @@
-<h1>Show Course</h1>
+<div id="outer-wrapper">
+  <div id="header-wrapper">
+    <h1>Show Course</h1>
+  </div>
+<div id="content-wrapper">
+  <div id="main-wrapper">
 
 <p id="notice"><%= notice %></p>
 
@@ -46,4 +51,5 @@
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
 
-
+  </div>
+</div>
