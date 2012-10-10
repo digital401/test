@@ -77,7 +77,7 @@ font: normal normal 100% helvetica, arial, sans-serif;
 line-height:1.2em;
 text-align: left;
 }
-#main-wrapper select, #main-wrapper input[type="file"], #main-wrapper input[type="text"], #main-wrapper input[type="password"], #main-wrapper textarea
+#main-wrapper select, #main-wrapper input[type="file"], #main-wrapper input[type="text"], #main-wrapper input[type="number"], #main-wrapper input[type="password"], #main-wrapper textarea
 {
 padding: 2px;
 border: solid 1px #85b1de; 
