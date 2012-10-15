@@ -32,11 +32,5 @@
   <%= @instructor.Address %>
 </p>
 
-<p>
-  <b>Password:</b>
-  <%= @instructor.Password %>
-</p>
-
-
 <%= link_to 'Edit', edit_instructor_path(@instructor) %> |
-<%= link_to 'Back', instructors_path %>
+<%= link_to 'Home', :controller => '/home' %>

@@ -1,6 +1,6 @@
 <h1>Listing students</h1>
 
-<table>
+<table class="data-table">
   <tr>
     <th>First name</th>
     <th>Middle name</th>

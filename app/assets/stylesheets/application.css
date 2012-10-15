@@ -56,6 +56,9 @@ padding: 0.5em 0;
 font: normal bold 100% helvetica, arial, sans-serif;
 color: #6699cc;
 }
+.required {
+color: #ff0000;
+}
 /* global link attributes */
 a, a:visited {
 color: #3972AD;
@@ -114,13 +117,16 @@ vertical-align: top;
 .data-form dl {
 clear: both;
 display: block;
-padding: 0.3em;
+padding: 0.3em 0;
 vertical-align: text-top;
 }
 .data-form dt {
 float: left;
 text-align: right;
 font-weight: bold;
+}
+.field {
+padding: 0.5em 0;
 }
 
 

@@ -3,4 +3,4 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @instructor %> |
-<%= link_to 'Home', :controller => '/home' %>
+<%= link_to 'Back', instructors_path %>

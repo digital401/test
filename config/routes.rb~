@@ -1,5 +1,33 @@
 CourseAssignment::Application.routes.draw do
+  resources :student_answers
+
+  resources :student_submissions
+
+  resources :assignment_questions
+
+  resources :teachings
+
+  resources :enrollments
+
+  resources :questions
+
+  resources :assignments
+
+  resources :instructors
+
+  resources :courses
+
+  resources :students
+
+  root :to => 'home#index'
+
   get "home/index"
+
+  match '/student_signup',  to: 'students#new'
+
+  match '/instructor_signup',  to: 'instructors#new'
+
+  match '/home/login',  to: 'home#login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

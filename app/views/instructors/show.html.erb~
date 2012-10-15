@@ -1,4 +1,4 @@
-<h1>Show Student</h1>
+<h1>Show Instructor</h1>
 
 <p id="notice"><%= notice %></p>
 
@@ -39,4 +39,4 @@
 
 
 <%= link_to 'Edit', edit_instructor_path(@instructor) %> |
-<%= link_to 'Back', instructors_path %>
+<%= link_to 'Home', :controller => '/home' %>

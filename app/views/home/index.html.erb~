@@ -1,5 +1,6 @@
 <h1>Course Assignment</h1>
-<form>
+<%= form_tag("/home/login", :method => "get") do %>
+<div class="data-form">
 <dl>
   <dt>Email:</dt>
   <dd><input type="text" name="email" value=""></dd>
@@ -12,7 +13,13 @@
   <dd><input type="checkbox" name="instructor" value="Y"> login as instructor?</dd>
 </dl>
 <dl>
-  <dd><input type="button" value="login"></dd>
+  <dd><input type="submit" value="login"></dd>
 </dl>
-</form>
+<dl>
+  <dd><%= link_to "Student Sign up", student_signup_path, class: "btn btn-large btn-primary" %></dd>
+<dl>
+  <dd><%= link_to "Instructor Sign up", instructor_signup_path, class: "btn btn-large btn-primary" %></dd>
+</dl>
+</div>
+<% end %>
 

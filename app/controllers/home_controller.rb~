@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   def login
     #@student = Student.where("upper(Email)=upper('Jane.Doe@gmail.com')")
-    @student = Student.where(:Email => "Jane.Doe@gmail.com")
+    @student = Student.where(Email => "Jane.Doe@gmail.com")
     if @student.empty?
       respond_to do |format|
         format.html # index.html.erb

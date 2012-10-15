@@ -1,6 +1,6 @@
 <h1>Listing instructors</h1>
 
-<table>
+<table class="data-table">
   <tr>
     <th>First name</th>
     <th>Middle name</th>
@@ -8,7 +8,6 @@
     <th>Email</th>
     <th>Phone</th>
     <th>Address</th>
-    <th>Password</th>
     <th></th>
     <th></th>
     <th></th>
@@ -22,7 +21,6 @@
     <td><%= instructor.Email %></td>
     <td><%= instructor.Phone %></td>
     <td><%= instructor.Address %></td>
-    <td><%= instructor.Password %></td>
     <td><%= link_to 'Show', instructor %></td>
     <td><%= link_to 'Edit', edit_instructor_path(instructor) %></td>
     <td><%= link_to 'Destroy', instructor, confirm: 'Are you sure?', method: :delete %></td>

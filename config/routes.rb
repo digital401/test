@@ -23,6 +23,12 @@ CourseAssignment::Application.routes.draw do
 
   get "home/index"
 
+  match '/student_signup',  to: 'students#new'
+
+  match '/instructor_signup',  to: 'instructors#new'
+
+  match 'home/login',  to: 'home#login'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
